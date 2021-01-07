@@ -35,17 +35,10 @@ const template = [
     label: app.name,
     submenu: [
       {
-        label: 'View SunBible Online',
+        label: 'View Psalm app online',
         click: async () => {
           const { shell } = require('electron')
-          await shell.openExternal('https://the-sunshining.github.io/SunBible/')
-        }
-      },
-      {
-        label: 'Open SunBible Wallpaper online',
-        click: async () => {
-          const { shell } = require('electron')
-          await shell.openExternal('https://the-sunshining.github.io/SunBible_IMG_Library/SunBible_wallpaper_img/wallpaper.html')
+          await shell.openExternal('https://sunbible-dev.github.io/Psalm-app/Psalm-app-iframe.html')
         }
       },
       { type: 'separator' },

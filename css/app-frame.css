@@ -12,6 +12,11 @@ iframe {
     width: 100%;
 }
 
+#iframe_2 {
+display: none;
+}
+
+
 
 
 nav {

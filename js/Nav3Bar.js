@@ -6,7 +6,7 @@ $(document).ready(function(){
         $( "div.NavLink" ).toggleClass( "change" )
     });
 
-    $("a").click(function(){
+    $("nav a").click(function(){
         $("nav").toggle( "slow" );
         $( "div.NavLink" ).toggleClass( "change" )
     });

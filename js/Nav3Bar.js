@@ -2,13 +2,15 @@
 $(document).ready(function(){
 
     $(".NavLink").click(function(){
-        $("nav").toggle();
-        $("NavLink").toggle(".change");
+        $("nav").toggle( "slow" );
+        $( "div.NavLink" ).toggleClass( "change" )
     });
 
     $("a").click(function(){
-        $("nav").toggle();
-        $("NavLink").toggle(".change");
+        $("nav").toggle( "slow" );
+        $( "div.NavLink" ).toggleClass( "change" )
     });
+
+
    
     });

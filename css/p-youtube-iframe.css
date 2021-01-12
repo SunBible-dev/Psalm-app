@@ -23,10 +23,16 @@ nav {
     left: 0px;
     right: 0px;
     background-color: rgba(128, 255, 0, 0.726);
+    padding: 100px;
 }
-nav a {
- padding:  20px;
- background-color: coral;
+nav a div {
+    float: left;
+    padding:  20px;
+    background-color: coral;
+    text-decoration: none;
+}
+nav a div:hover {
+    background-color: cadetblue;
 }
 
 section {

@@ -35,6 +35,8 @@ nav a div:hover {
     background-color: cadetblue;
 }
 
+
+
 section {
     background-color: rgb(255, 255, 177);
     border-top: 1px solid black;
@@ -45,4 +47,12 @@ section {
 }
 section iframe {
     border: 2px solid black;
+}
+section a {
+    padding:  3px;
+    background-color: coral;
+    text-decoration: none;
+}
+section a:hover {
+    background-color: cadetblue;
 }

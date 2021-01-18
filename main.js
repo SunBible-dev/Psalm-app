@@ -71,6 +71,7 @@ const template = [
     label: 'View',
     submenu: [
       { role: 'reload' },
+      { role: 'toggleDevTools' },
       { type: 'separator' },
       { role: 'togglefullscreen' }
     ]

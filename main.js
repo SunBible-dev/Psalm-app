@@ -41,6 +41,20 @@ const template = [
           await shell.openExternal('https://sunbible-dev.github.io/Psalm-app/Psalm-app-iframe.html')
         }
       },
+      {
+        label: 'Join the SunBible discord server',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://discord.gg/t8VryNcGgc')
+        }
+      },
+      {
+        label: 'Read SunBible updates and more on medium',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://medium.com/sunbible')
+        }
+      },
       { type: 'separator' },
       { role: 'hide' },
       { role: 'hideothers' },
@@ -82,6 +96,21 @@ contextMenu({
         { type: 'separator' },
         actions.copyImage(),
         actions.saveImageAs(),
+        { type: 'separator' },
+        {
+          label: 'Join the SunBible discord server',
+          click: async () => {
+            const { shell } = require('electron')
+            await shell.openExternal('https://discord.gg/t8VryNcGgc')
+          }
+        },
+        {
+          label: 'Read SunBible updates and more on medium',
+          click: async () => {
+            const { shell } = require('electron')
+            await shell.openExternal('https://medium.com/sunbible')
+          }
+        },
         { type: 'separator' },
         { role: 'minimize'},
         { role: 'togglefullscreen' },

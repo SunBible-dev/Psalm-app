@@ -17,7 +17,7 @@ app.on('ready', async () => {
         }
     })
 
-    mainWindow.loadFile('Psalm-app-iframe.html')
+    mainWindow.loadURL('https://the-sunshining.github.io/SunBible/index.html/Psalm/Psalm-app-iframe.html')//https://the-sunshining.github.io/SunBible/index.html/Psalm/Psalm-app-iframe.html
     mainWindow.removeMenu()
 
 

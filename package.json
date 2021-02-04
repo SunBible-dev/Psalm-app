@@ -4,7 +4,7 @@
         "productName": "Psalm"
     },
     "name": "psalm-app",
-    "version": "0.0.4",
+    "version": "0.0.4-beta",
     "description": "Read, study, and memorize the book of Psalm.",
     "main": "main.js",
     "homepage": "https://github.com/SunBible-dev/Psalm-app",

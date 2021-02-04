@@ -35,10 +35,17 @@ const template = [
     label: app.name,
     submenu: [
       {
+        label: 'Check for updates',
+        click: async () => {
+          const { shell } = require('electron')
+          await shell.openExternal('https://github.com/SunBible-dev/Psalm-app/releases')
+        }
+      },
+      {
         label: 'View Psalm app online',
         click: async () => {
           const { shell } = require('electron')
-          await shell.openExternal('https://sunbible-dev.github.io/Psalm-app/Psalm-app-iframe.html')
+          await shell.openExternal('https://the-sunshining.github.io/SunBible/Psalm/Psalm-app-iframe.html')
         }
       },
       {
@@ -98,6 +105,20 @@ contextMenu({
         actions.copyImage(),
         actions.saveImageAs(),
         { type: 'separator' },
+        {
+          label: 'Check for updates',
+          click: async () => {
+            const { shell } = require('electron')
+            await shell.openExternal('https://github.com/SunBible-dev/Psalm-app/releases')
+          }
+        },
+        {
+          label: 'View Psalm app online',
+          click: async () => {
+            const { shell } = require('electron')
+            await shell.openExternal('https://the-sunshining.github.io/SunBible/Psalm/Psalm-app-iframe.html')
+          }
+        },
         {
           label: 'Join the SunBible discord server',
           click: async () => {
